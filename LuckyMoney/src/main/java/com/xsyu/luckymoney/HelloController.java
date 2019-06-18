@@ -18,6 +18,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String say(){
-        return limitConfig.getMinMoney() + " " + limitConfig.getDescription();
+        return "Hello!" + limitConfig.getMinMoney() + " " + limitConfig.getDescription();
     }
 }
