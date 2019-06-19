@@ -7,3 +7,14 @@ limit:
   maxMoney: 9999
   minMoney: 1
   description: 最小发${limit.minMoney}, 最多发${limit.maxMoney}
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: tiger123
+    url: jdbc:mysql://127.0.0.1:3306/luckymoney?characterEncoding=utf-8&serverTimezone=GMT%2B8
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
